@@ -1,0 +1,19 @@
+[project]
+name = "mlbio"
+authors = [ {name = "Raphaël MARINO", email = "raphael.marino@epita.fr"} ]
+version = "0.1.0"
+description = "Apply a published method to a new dataset"
+requires-python = ">= 3.10"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+]
+
+[project.scripts]
+mlbio = "mlbio.main:main"
+
+[build-system]
+requires = ["uv_build >= 0.12.23, < 0.14"]
+build-backend = "uv_build"
